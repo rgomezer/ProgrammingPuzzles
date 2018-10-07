@@ -48,6 +48,9 @@ namespace AlgorithmProblems
             obj.isPallendrome(test3).ToString();
 
             Console.WriteLine("Is {0} a pallendrome: {1}", test3, obj.isPallendrome(test3).ToString());
+
+            double answer = obj.exponent(2, 2.25);
+            Console.WriteLine("The power of 2 cubed is: {0} ", answer);
         }
     }
 }

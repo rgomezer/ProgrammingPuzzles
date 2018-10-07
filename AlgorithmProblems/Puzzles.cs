@@ -86,7 +86,7 @@ namespace AlgorithmProblems
 
         public bool isPallendrome(string input)
         {
-            if(input == null)
+            if (input == null)
             {
                 return false;
             }
@@ -113,6 +113,66 @@ namespace AlgorithmProblems
 
 
             return true;
+        }
+
+        public long exponent(long index, long degree)
+        {
+            if (degree == 0)
+            {
+                return 1;
+            }
+            else if (degree > 0)
+            {
+
+                long temp = index;
+
+                for (int i = 1; i < degree; i++)
+                {
+                    temp *= index;
+                }
+
+                return temp;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+
+        public double exponent(double index, double degree)
+        {
+            if (degree == 0)
+            {
+                return 1.0;
+            }
+            else if (degree > 0)
+            {
+
+                double temp = index;
+
+                for (int i = 1; i < degree; i++)
+                {
+                    temp *= index;
+                }
+
+                return temp;
+            }
+            else if (degree < 0)
+            {
+
+                double temp = index;
+
+                for (int i = -1; i > degree; i--)
+                {
+                    temp *= index;
+                }
+
+                return 1 / temp;
+            }
+            else
+            {
+                return -1;
+            }
         }
     }
 }

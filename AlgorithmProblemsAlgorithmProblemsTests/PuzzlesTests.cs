@@ -56,5 +56,15 @@ namespace AlgorithmProblems.Tests
             Assert.AreEqual(0, pPuzzle.FindNthFiboNacci(0));
             Assert.AreEqual(-1, pPuzzle.FindNthFiboNacci(-15));
         }
+
+        [TestMethod()]
+        public void ExponentialCalculatorTest()
+        {
+            Puzzles pPuzzle = new Puzzles();
+
+            Assert.AreEqual(1, pPuzzle.exponent(2, 0));
+            Assert.AreEqual(8, pPuzzle.exponent(2, 3));
+            Assert.AreEqual(4294967296, pPuzzle.exponent(2, 32));
+        }
     }
 }
