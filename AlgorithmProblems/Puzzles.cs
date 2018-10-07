@@ -135,6 +135,8 @@ namespace AlgorithmProblems
             }
             else
             {
+                Console.WriteLine("Only positive integers are valid for exponents");
+                Console.WriteLine("Input parameters: {0}, {1} not valid", index, degree);
                 return -1;
             }
         }

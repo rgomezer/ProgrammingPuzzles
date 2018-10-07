@@ -63,6 +63,7 @@ namespace AlgorithmProblems.Tests
             Puzzles pPuzzle = new Puzzles();
 
             Assert.AreEqual(1, pPuzzle.exponent(2, 0));
+            Assert.AreEqual(-1, pPuzzle.exponent(2, -1));
             Assert.AreEqual(8, pPuzzle.exponent(2, 3));
             Assert.AreEqual(4294967296, pPuzzle.exponent(2, 32));
         }
